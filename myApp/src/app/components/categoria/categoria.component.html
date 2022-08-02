@@ -1,0 +1,46 @@
+<ion-content >
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        CATEGORIAS
+      </ion-title>
+      <!-- <ion-buttons slot="end">
+        <ion-icon slot="icon-only" name="add" (click)="openAlet()"></ion-icon>
+      </ion-buttons> -->
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of categorias; let i=index">
+
+        <ion-card routerLink="/pets">
+          <ion-card-subtitle class="ion-margin">
+            <span class="text-primary">{{i + 1}}. </span>
+            <span class="article-source-name">{{item.name}}</span>
+          </ion-card-subtitle>
+
+
+          <ion-card-title class="ion-padding-horizontal ion-margin-bottom">
+            {{item.titulo}}
+          </ion-card-title>
+
+          <ion-img style="width: 300px; height: 180px; 
+          margin-left: 20%"
+          
+          [src]="item.imageUrl" >  
+          </ion-img>
+
+          <ion-card-content>
+
+          </ion-card-content> 
+
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+
+</ion-content>

@@ -1,0 +1,12 @@
+<ion-content>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        PUBLICAR MASCOTA
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <button (click)="hacerFoto()"> Hacer foto</button>
+  <img [src]="foto" *ngIf="foto" />
+</ion-content>
